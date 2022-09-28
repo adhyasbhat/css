@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute and psedo selectros</title>
+    <style>
+        .container{
+            margin: 34px 23px;
+            display: block;
+            width: 233px;
+            margin: auto;
+        }
+        input{
+            display: block;
+            }
+            input[type='text']{
+                padding: 23px;
+                border: 2px solid gold;
+            }
+            /* a[target]{
+                font-size: 24px;
+                color: violet;
+            } */
+            a[target='blank']{
+                font-size: 24px;
+                color: violet;
+            }
+            a[target='_self']{
+                font-size: 24px;
+                color: rgb(62, 205, 169);
+            }
+            input[type='password']{
+                color: blue;
+            }
+            applied to 2nd item
+            li:nth-child(3){
+                color: darkred;
+            }
+            /* applied to every second item */
+            li:nth-child(2n+0){
+                color: rgb(150, 169, 45);
+            }
+            odd item
+            li:nth-child(2n+0){
+                color: rgb(233, 100, 122);
+            }
+            even item
+            li:nth-child(2n+0){
+                color: rgb(7, 39, 39);
+            }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com " target="blank">go to google page</a></h1>
+        <h1><a href="http://facebook.com " target="blank">go to facebook page</a></h1>
+        <h1><a href="http://youtube.com " target="_self">go to youtube page</a></h1>
+        <form action="" class="formaction">
+            <input type="text" placeholder="enter name">
+            <input type="password"placeholder="password">
+            <input type="submit"value="submit">
+        </form>
+        <ul>
+            <!-- li.item#item.$*5 -->
+            <li class="item 1" id="item">item1</li> 
+            <li class="item 2" id="item">item2</li>
+            <li class="item 3" id="item">item3</li>
+            <li class="item 4" id="item">item4</li>
+            <li class="item 5" id="item">item5</li>
+            <li class="item 6" id="item">item6</li> 
+            <li class="item 7" id="item">item7</li>
+            <li class="item 8" id="item">item8</li>
+            <li class="item 9" id="item">item9</li>
+            <li class="item 10" id="item">item10</li>
+        </ul>
+    </div>
+</body>
+</html>
